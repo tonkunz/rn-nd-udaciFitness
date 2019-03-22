@@ -94,7 +94,7 @@ export function getMetricMetaInfo (metric) {
         return (
           <View>
             <MaterialCommunityIcons
-              name='swin'
+              name='swim'
               color={'black'}
               size={35}
             />
