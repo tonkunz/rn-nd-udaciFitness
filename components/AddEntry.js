@@ -11,8 +11,7 @@ function SubmitBtn ({ onPress }) {
   
   return (
     <TouchableOpacity
-      onPress={onPress}
-    >
+      onPress={onPress}>
       <Text>SUBMIT</Text>
     </TouchableOpacity>
   )
@@ -93,13 +92,13 @@ export default class AddEntry extends Component {
               {type === 'slider'
                 ? <UdaciSlider
                     value={value}
-                    onChange={value => slide(key, value)}
+                    onChange={(value) => this.slide(key, value)}
                     {...rest}
                   />
                 : <UdaciStepers
                     value={value}
-                    onIncrement={() => increment(key)}
-                    onDecrement={() => decrement(key)}
+                    onIncrement={() => this.increment(key)}
+                    onDecrement={() => this.decrement(key)}
                     {...rest}
                   />
               }
