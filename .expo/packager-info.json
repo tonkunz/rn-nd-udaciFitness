@@ -1,10 +1,9 @@
 {
-  "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 9352,
+  "packagerPid": 7668,
   "expoServerNgrokUrl": "https://8y-mrr.anonymous.udacifitness.exp.direct",
   "packagerNgrokUrl": "https://packager.8y-mrr.anonymous.udacifitness.exp.direct",
-  "ngrokPid": 240,
-  "webpackServerPort": null
+  "ngrokPid": 9248,
+  "devToolsPort": 19002
 }
