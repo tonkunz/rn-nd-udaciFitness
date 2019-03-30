@@ -1,10 +1,20 @@
 import React from 'react'
-import { Text, TouchableOpacity } from 'react-native'
+import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-export default function TextButton ({ value, onPress }) {
+// Utils
+import { purple } from '../utils/colors'
+
+export default function TextButton ({ value, onPress, style = {} }) {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity style={[styles.reset, style]} onPress={onPress}>
       <Text>{value}</Text>
     </TouchableOpacity>
   )
 }
+
+const styles = StyleSheet.create({
+  reset: {
+    textAlign: 'center',
+    color: purple,
+  }
+})
