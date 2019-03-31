@@ -1,5 +1,6 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, Platform } from 'react-native'
+import { FontAwesome, Ionicons } from '@expo/vector-icons'
 
 //Redux
 import { createStore } from 'redux'
@@ -10,13 +11,18 @@ import reducer from './reducers'
 import AddEntry from './components/AddEntry'
 import History from './components/History'
 
+//Navigation
+import TabNav from './components/TabNav'
+
+//Utils
+import { white, purple } from './utils/colors'
+
 export default class App extends React.Component {
   render() {
     return (
       <Provider store={createStore(reducer)}>
         <View style={{flex: 1}}>
-          <View style={{height: 20}}/>
-          <History />
+          <TabNav />
         </View>
       </Provider>
     )
