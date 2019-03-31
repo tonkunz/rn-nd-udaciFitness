@@ -8,8 +8,7 @@ import { Provider } from 'react-redux'
 import reducer from './reducers'
 
 //Components
-import AddEntry from './components/AddEntry'
-import History from './components/History'
+import UdaciStatusBar from './components/UdaciStatusBar'
 
 //Navigation
 import TabNav from './components/TabNav'
@@ -22,6 +21,7 @@ export default class App extends React.Component {
     return (
       <Provider store={createStore(reducer)}>
         <View style={{flex: 1}}>
+          <UdaciStatusBar backgroundColor={purple} barStyle='light-content'/>
           <TabNav />
         </View>
       </Provider>
