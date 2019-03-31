@@ -11,7 +11,7 @@ import reducer from './reducers'
 import UdaciStatusBar from './components/UdaciStatusBar'
 
 //Navigation
-import TabNav from './components/TabNav'
+import StackNav from './components/StackNav'
 
 //Utils
 import { white, purple } from './utils/colors'
@@ -22,7 +22,7 @@ export default class App extends React.Component {
       <Provider store={createStore(reducer)}>
         <View style={{flex: 1}}>
           <UdaciStatusBar backgroundColor={purple} barStyle='light-content'/>
-          <TabNav />
+          <StackNav />
         </View>
       </Provider>
     )
